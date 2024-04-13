@@ -1,5 +1,4 @@
 ﻿using System;
-using Math;
 
 namespace GithubActionsLab
 {
@@ -85,8 +84,7 @@ namespace GithubActionsLab
         // Implement this method following a similar pattern as above!
         public static double Power(string x, string y)
         {
-            String filler = "";
-            return Math.Pow(double.parse(x), double.parse(y));
+            return Math.Pow(double.Parse(x), double.Parse(y));
         }
     }
 

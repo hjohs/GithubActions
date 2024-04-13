@@ -1,5 +1,6 @@
 ﻿using System;
 using NUnit.Framework;
+using NUnit.Framework.Legacy;
 
 namespace GithubActionsLab
 {
@@ -9,9 +10,9 @@ namespace GithubActionsLab
         [Test]
         public void Add_Valid()
         {
-            Assert.AreEqual(3, Program.Add("1", "2"));
-            Assert.AreEqual(5, Program.Add("3", "2"));
-            Assert.AreEqual(12, Program.Add("5", "7"));
+            ClassicAssert.AreEqual(3, Program.Add("1", "2"));
+            ClassicAssert.AreEqual(5, Program.Add("3", "2"));
+            ClassicAssert.AreEqual(12, Program.Add("5", "7"));
         }
 
         [Test]
